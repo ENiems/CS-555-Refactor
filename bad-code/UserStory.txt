@@ -1,0 +1,16 @@
+User Story
+Title: Homework Planner
+
+Acceptance Test (hwScheduleTest):
+	- Verify that tasks can be added
+	- Verify that tasks can be completed
+	- Verify that tasks can be edited/deleted
+	- Verify that due dates can be edited
+	- Verify tasks can be seen
+	- Verify that overdue tasks can be shown
+
+Priority: 1
+
+Story Points: 1
+
+Description: As a student, I want to be able to track and update a planner to keep track of my homework and assignments' due dates.
