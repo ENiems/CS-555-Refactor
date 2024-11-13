@@ -1,0 +1,91 @@
+Manual Test #1:
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Test Case ID: 1
+Description: Verify that an assignment can be added with a date, marked as incomplete by default, marked as complete, and then verified as complete. Followed by deleting the task.
+Preconditions: Empty task list, Date input is after the current date.
+
+Steps:
+  1. Start the program
+  2. Select “Add upcoming assignment” from the menu.
+  3. Enter “Homework 1” for the assignment.
+  4. Enter “Math” for the subject.
+  5. Enter “12” for the month.
+  6. Enter “26” for the day.
+  7. Enter “2099” for the year.
+  8. Verify that the assignment list contains the assignment, the date, and the assignment is marked as incomplete by selecting “View upcoming schedule”.
+  9. Select “Mark assignment as completed” from the menu.
+  10. Enter “1” for the assignment we previously created.
+  11. Verify that the assignment list contains the same assignment marked as complete by selecting “View upcoming schedule”.
+  12. Select “Delete assignment” from the menu.
+  13. Enter “1” for the assignment we previously created.
+  14. Verify that the assignment list no longer contains any assignments by selecting “View upcoming schedule”.
+
+Expected Result:
+  1. After step 8, the assignment should be added to the upcoming assignments as not submitted with the input date.
+  2. After step 11, the assignment should now be marked as submitted.
+  3. After step 14, the assignment list should be empty.
+
+
+Manual Test #2:
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Test Case ID: 2
+Description: Verify that a test can be added with a date, marked as incomplete by default, marked as complete, and then verified as complete. Followed by deleting the task.
+Preconditions: Empty task list, Date input is after the current date.
+
+Steps:
+  1. Start the program
+  2. Select “Add upcoming test” from the menu.
+  3. Enter “CS 555 Test” for the assignment.
+  4. Enter “Computer Science” for the subject.
+  5. Enter “12” for the month.
+  6. Enter “26” for the day.
+  7. Enter “2099” for the year.
+  8. Verify that the assignment list contains the test, the date, and the assignment is marked as incomplete by selecting “View upcoming schedule”.
+  9. Select “Mark assignment as completed” from the menu.
+  10. Enter “1” for the test we previously created.
+  11. Verify that the assignment list contains the same test marked as complete by selecting “View upcoming schedule”.
+  12. Select “Delete assignment” from the menu.
+  13. Enter “1” for the assignment we previously created.
+  14. Verify that the assignment list no longer contains any assignments by selecting “View upcoming schedule”.
+
+Expected Result:
+  1. After step 8, the test should be added to the upcoming assignments as not submitted with the input date.
+  2. After step 11, the test should now be marked as submitted.
+  3. After step 14, the assignment list should be empty.
+
+
+Manual Test #3:
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Test Case ID: 3
+Description: Verify that an assignment can be seen as overdue only if the current date is past the due date, and the assignment was not submitted.
+Preconditions: Empty task list, Date input for task 1 is after the current date, Date input for task 2 is before the current date.
+
+Steps:
+  1. Start the program
+  2. Select “Add upcoming assignment” from the menu.
+  3. Enter “Homework 2” for the assignment.
+  4. Enter “Math” for the subject.
+  5. Enter “12” for the month.
+  6. Enter “26” for the day.
+  7. Enter “2099” for the year.
+  8. Select “Add upcoming assignment” from the menu.
+  9. Enter “Homework 1” for the assignment.
+  10. Enter “Math” for the subject.
+  11. Enter “12” for the month.
+  12. Enter “26” for the day.
+  13. Enter “1” for the year.
+  14. Select “Mark assignment as completed” from the menu.
+  15. Enter “1” for the assignment we created second.
+  16. Verify that the assignment list contains the assignment with Homework 2 marked as incomplete by selecting  “View upcoming schedule”.
+  17. Verify that the overdue list contains no assignments as Homework 1 is complete by selecting “View overdue assignments”.
+  18. Select “Update assignment due date” from the menu.
+  19. Enter “2” for the assignment we created first.
+  20. Enter “12” for the month.
+  21. Enter “26” for the day.
+  22. Enter “5” for the year.
+  23. Verify that the overdue list contains only assignment Homework 2 by selecting “View overdue assignments”.
+
+Expected Result:
+  1. After step 16, the assignment list contains the assignment titled Homework 2.
+  2. After step 17, the overdue list is empty.
+  3. After step 23, the overdue list contains the assignment titled Homework 2.
