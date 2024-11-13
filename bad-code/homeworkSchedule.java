@@ -38,7 +38,7 @@ public class homeworkSchedule {
     public void printFullList() {
         for(int i=0;i<schedule.size();i++) {
             Assignment curr = schedule.get(i);
-            System.out.print(i + " - " + curr.getAssignment());
+            System.out.print((i+1) + " - " + curr.getAssignment());
             if(curr.getStatus()) System.out.println(" - Submitted");
             else System.out.println(" - Not Submitted");
         }
