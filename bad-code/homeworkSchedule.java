@@ -40,6 +40,7 @@ public class homeworkSchedule {
             Assignment curr = schedule.get(i);
             System.out.print(i + " - " + curr.getAssignment());
             if(curr.getStatus()) System.out.println(" - Submitted");
+            else System.out.println(" - Not Submitted");
         }
     }
 
@@ -51,6 +52,7 @@ public class homeworkSchedule {
             if (due.isAfter(now) || due.isEqual(now)) { 
                 System.out.print(curr.getDue() + " - " + curr.getAssignment());
                 if (curr.getStatus()) System.out.println(" - Submitted");
+                else System.out.println(" - Not Submitted");
             }
         }
     }	
@@ -65,6 +67,7 @@ public class homeworkSchedule {
             if ((due.isAfter(start) || due.isEqual(start)) && (due.isBefore(end) || due.isEqual(end))) {
                 System.out.print(curr.getDue() + " - " + curr.getAssignment());
                 if (curr.getStatus()) System.out.println(" - Submitted");
+                else System.out.println(" - Not Submitted");
             }
         }
     }
@@ -79,6 +82,7 @@ public class homeworkSchedule {
             if ((due.isAfter(start) || due.isEqual(start)) && (due.isBefore(end) || due.isEqual(end))) {
                 System.out.print(curr.getDue() + " - " + curr.getAssignment());
                 if (curr.getStatus()) System.out.println(" - Submitted");
+                else System.out.println(" - Not Submitted");
             }
         }
     }
