@@ -11,6 +11,6 @@ Acceptance Test (hwScheduleTest):
 
 Priority: 1
 
-Story Points: 1
+Story Points: 3
 
 Description: As a student, I want to be able to track and update a planner to keep track of my homework and assignments' due dates.
