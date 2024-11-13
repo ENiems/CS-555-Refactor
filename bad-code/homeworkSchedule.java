@@ -93,7 +93,7 @@ public class homeworkSchedule {
             Assignment curr = schedule.get(i);
             LocalDate due = curr.getDue(); 
             if (due.isBefore(now) && !curr.getStatus()) { 
-                System.out.print(curr.getDue() + " - " + curr.getAssignment());
+                System.out.println(curr.getDue() + " - " + curr.getAssignment());
             }
         }
     }	
